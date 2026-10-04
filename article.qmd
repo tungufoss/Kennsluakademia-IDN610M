@@ -1,0 +1,101 @@
+---
+# File: article.qmd
+# Source of the article: renders article.pdf (through kennsluakademia_conf.cls, keeping
+# the generated article.tex) and a web version in the HÍ look.  Render both with:  quarto render article.qmd
+title: "Endurskoðun á námskeiði í Viðskiptagreind: Hagnýt hæfni í brennidepli"
+conference: Ráðstefna Kennsluakademíu opinberu háskólanna
+address: Veröld Háskóla Íslands
+date: 2024-11-22
+date-format: "D MMMM, YYYY"
+lang: is
+keywords:
+  - Samantektarverkefni
+  - Raunhæf verkefni
+  - Skilningsmiðað námsmat
+  - Hópavinna
+author:
+  - name: Helga Ingimundardóttir
+    orcid: 0000-0002-2780-3546
+    affiliations:
+      - ref: ivt
+affiliations:
+  - id: ivt
+    department: Iðnaðarverkfræðideild
+    name: Háskóli Íslands
+bibliography: references.bib
+citation:
+  type: paper-conference
+  container-title: Ráðstefna Kennsluakademíu opinberu háskólanna
+  publisher-place: Veröld Háskóla Íslands, Reykjavík
+  issued: 2024
+  url: https://tungufoss.github.io/Kennsluakademia-IDN610M/
+filters:
+  - quarto/kennsluakademia.lua
+format:
+  pdf:
+    template: quarto/kennsluakademia-template.tex
+    keep-tex: true
+    pdf-engine: pdflatex
+    cite-method: natbib
+    biblio-style: plainnat
+  haskoli-islands-html:
+    lang: is
+    toc-title: Efnisyfirlit
+    csl: quarto/apa.csl
+    link-citations: true
+    reference-section-title: Tilvísanir
+    appendix-cite-as: display
+    language:
+      appendix-attribution-cite-as: "Vinsamlega vitnið í þetta verk sem:"
+    css: quarto/kennsluakademia.css
+    template-partials:
+      - quarto/title-block.html
+    include-in-header:
+      - text: |
+          <link rel="icon" type="image/png" href="quarto/favicon.png">
+    other-links:
+      - text: Glærur (PDF)
+        icon: file-slides
+        href: slides.pdf
+---
+
+# Inngangur
+
+Fyrsta skiptið sem ég kenndi viðskiptagreind vakti athygli á misræmi milli hæfni nemenda og þeirra hæfniskrafna sem fyrirtækin höfðu. Þetta kom sérstaklega fram þegar fulltrúar fyrirtækisins hlýddu á kynningar nemenda. Kennslukönnunin benti einnig á mikið vinnuálag, sem gerði það ljóst að endurskoða þurfti námskeiðið, bæði með tilliti til þess sem fyrirtækin væntu og til að koma betur til móts við nemendur.
+
+Auk þess gaf endurgjöf frá útskrifuðum nemendum gagnlegar upplýsingar. Þeir mátu sérstaklega nálgunina *Learning-by-Doing* (LbD), þar sem þeir tóku þátt í öllu ferlinu, frá gagnasöfnun og vinnslu til að kynna niðurstöður. Þeir bentu á að meiri áhersla ætti að vera á þjálfun í notkun *GitHub*^[*GitHub* er leiðandi lausn í útgáfustýringu forritunarlausna í íslenskum hugbúnaðarfyrirtækjum.] til að auðvelda verkstjórn og samvinnu. Einnig var bent á að hópverkefnin gætu stundum leitt til ójafns vinnuálags innan hópanna.
+
+Vinnustofa sem var haldin á vegum [LOUIS](https://aurora-universities.eu/louis/)-verkefnisins hjálpaði til við að greina lykilnámsmarkmið, sem ég nýtti til að endurskoða námskeiðið með aðferðarfræði *Understanding by Design* (UbD) eða *skilningsmiðað námsmat*. Samkvæmt @wiggins2005understanding er lykilatriði UbD að tryggja að kennsluaðferðir séu í samræmi við skilgreind námsmarkmið.
+
+# Aðferð
+
+Ég tók upp nýja nálgun byggða á *verkefnamiðaðri námsaðferð* eða *Problem-Based Learning* (PBL) og innleiddi nýtt *samantektarverkefni* kennt við *Capstone* í anda @capstone sem var þróað í samstarfi við sama ytri aðila yfir allt misserið. Þessi breyting hafði það að markmiði að samþætta hagnýta notkun kjarnahæfni viðskiptagreindar við raunverulegar áskoranir í atvinnulífinu. Aðferðarfræði PBL stuðlaði að því að nemendur fengu tækifæri til að vinna að lausnum með gagnvirkri og rökstuddri hugsun (@barrows1980problem), sem er nauðsynlegt fyrir viðskiptagreind.
+
+Námskeiðið var uppbyggt í lotum þar sem hver lota fjallaði um velskilgreinda og afmarkaða aðferðafræði.^[Loturnar voru: gagnasiðfræði, hagnýt notkun mállíkana, leiðbeint nám, klösun og greining atburða í ferlum.] Í lok þessara lota fengu nemendur tækifæri til að endurskoða fyrri verkefni og laga það eftir nýrri þekkingu. Þannig voru fyrri lotur undirbúningsvinna fyrir samantektarverkefnið, þar sem nemendur samþættu öll viðfangsefni námskeiðsins í eina heild. Þetta ferli gerði nemendum kleift að þróa og bæta verkefnin smám saman, með Capstone-verkefnið sem hápunkt námskeiðsins sem kallaði á að nemendur nýttu fjölbreytta færni til að leysa raunveruleg verkefni.
+
+> Námskeiðið hafði þrjú meginverkefni: yfirlitskynning fyrir fulltrúa fyrirtækisins, tæknilega skýrslu og kóðasafn til að fyrirtækið gæti endurframkallað niðurstöður nemenda sjálft.
+
+Með því að vinna í stórum hópum gátu nemendur tekið þátt í samstarfi sem skilaði fyrirtækinu nothæfum niðurstöðum. Þetta skapaði hagnýta reynslu sem undirbjó nemendur fyrir framtíðar­samstarf í sambærulegu vinnuumhverfi eftir útskrift. Nálgunin samræmdist einnig hugmyndafræði *uppbyggilegrar samhæfingar* (constructive alignment), þar sem kennsluaðgerðir og námsmat tengdust beint við námsmarkmiðin (@biggs_constructive).
+
+# Niðurstöður
+
+Endurskoðun á námskeiðinu lagði áherslu á valdeflingu nemenda og færði mig í hlutverk leiðbeinanda frekar en kennara. Ég lagði sérstaka áherslu á að viðhalda samræmdum þemum í gegnum öll verkefni og innleiddi *GitHub Classroom*^[*GitHub Classroom* er verkfæri sem hjálpar kennara að stjórna og skipuleggja námskeiðið sitt með *GitHub*. Kennari getur búið til, dreift og metið verkefni sjálfvirkt, gefið endurgjöf og fylgst með framvindu nemenda í mælaborðinu. Sjá: <https://classroom.github.com/>.] til að auðvelda dreifingu á kóða og verkefnum, sem stuðlaði að betri verkefnastjórn og hópvinnu.
+
+Til að styðja frekar við nemendur bætti ég við hlekkjum að rafrænum örnámskeiðum um helstu tól. Einnig bauð ég samstarfsaðilum mínum úr atvinnulífinu að deila reynslu sinni af starfi gagnavísindamanna, sem gaf nemendum fjölbreytt sjónarhorn og reynslu utan minna eigin sjónarmiða.
+
+Nemendur lýstu aukinni ánægju með námskeiðið og þátttaka þeirra var nær fullkomin allan tímann. Ef nemendur komust ekki í tíma mættu þeir í gegnum *Microsoft Teams*. Þrátt fyrir að engin mætingaskylda væri var almennt mjög góð mæting. Þetta háa þátttökuhlutfall endurspeglar það sem @freeman2007sense hafa bent á, að árangursríkt námsumhverfi skapar öruggt og hvetjandi rými fyrir nemendur. Nálgunin samræmdist einnig aðferðarfræði uppbyggilegrar samhæfingar og markmiðum UbD, eins og `\citet{biggs_constructive, biggs_university}`{=latex}[@biggs_constructive; @biggs_university]{.content-visible when-format="html"} lýsa því.
+
+Þegar nemendur höfðu lokið verkunum fengu þeir tækifæri til að endurskoða fyrri verkefni til að bæta þau, og margir sýndu verulega framfarir þegar þeir samþættu eldri vinnu sína við nýrra efni. Nemendur voru hvattir til að ígrunda eigið nám og námskeiðið, og niðurstöður þeirra urðu mun betri. Endurgjöf frá nemendum sýndi að námskeiðið var krefjandi en lærdómsríkt. Þeir þökkuðu námskeiðinu fyrir að brúa bilið á milli fræðilegrar þekkingar og raunverulegra verkefna og fyrir að efla skilning þeirra á langtímahópavinnu.
+
+Nemendur lýstu námskeiðinu sem einstaklega nemendamiðuðu og þeir fundu að þessi kennsluaðferð, byggð á LbD, hámarkaði þátttöku þeirra og afrakstur. Þeir fundu að þessi hagnýta nálgun auðveldaði þeim að skilja og nýta efnið, sem gerði námskeiðið aðgengilegra og minna yfirþyrmandi sem samrýmist kenningum @kolb1984experiential.
+
+# Umræður
+
+Einn nemandi, sem upphaflega kvartaði yfir breyttri kennsluaðferð þar sem hann vildi meira skipulag, viðurkenndi að sjálfstætt nám hafði verið mikilvæg reynsla fyrir sig. Hann lýsti því að þetta námskeið hefði kennt honum mest af öllum sínum háskólaferli.
+
+Í gegnum allt námskeiðið unnu nemendur með sama gagnasafni og tókst þeim að bæta frammistöðu sína í lokaverkefninu samanborið við fyrra ár. Þar sem fyrirtækið var mjög ánægt með niðurstöður nemenda sá það möguleika á að nýta þær í sinni starfsemi.
+
+Ég geri mér grein fyrir að álagið í námskeiðinu er enn talsvert, eins og fram kom í síðustu kennslukönnun. Kennsluaðferðin krefst mikils af nemendum til að tileinka sér efnið, en kosturinn er sá að nemendur fá djúpan skilning sem situr eftir til lengri tíma.
+Til að bregðast við því er áætlun um að samþætta eina lotuna í annað námskeið og bæta við upphafslotu sem miðar að hópmyndun, trausti og hugstormun um þemu fyrir komandi verkefni. Hópar sem héldu sig við sama þema allt námskeiðið skiluðu betri niðurstöðum, meðan aðrir hópar áttu í erfiðleikum með að samþætta fyrri vinnu.
+
+Þróun námskeiðsins hefur leitt til jákvæðra breytinga, og það er mitt markmið að undirbúa nemendur betur fyrir atvinnulífið og stuðla að heilbrigðu námsumhverfi fyrir uppbyggilega hópvinnu.
