@@ -3,10 +3,12 @@
 **Helga Ingimundardóttir** ([ORCID 0000-0002-2780-3546](https://orcid.org/0000-0002-2780-3546))
 Iðnaðarverkfræðideild, Háskóli Íslands
 
-Ráðstefna Kennsluakademíu opinberu háskólanna, Veröld Háskóla Íslands, 22. nóvember 2024
+[Ráðstefna Kennsluakademíu opinberu háskólanna 2024](https://kennsluakademia.hi.is/radstefna-kennsluakademiunnar/radstefna-2024/), Veröld Háskóla Íslands, 22. nóvember 2024
+Málstofa 4, kl. 14:45–16:05, stofa VHV-023
 
+- **Published PDF:** [Conf_Kennsluakademia_2024-1.pdf](https://kennsluakademia.hi.is/wp-content/uploads/2024/11/Conf_Kennsluakademia_2024-1.pdf) (kennsluakademia.hi.is)
 - **Web version:** <https://tungufoss.github.io/Kennsluakademia-IDN610M/>
-- **PDF:** [article.pdf](article.pdf)
+- **Own copy of the PDF:** [article.pdf](article.pdf)
 - **Slides:** [slides.pdf](slides.pdf)
 
 ## Útdráttur
@@ -15,7 +17,7 @@ Námskeiðið *Viðskiptagreind* var endurskipulagt með það að markmiði að
 **Lykilorð:** Samantektarverkefni, Raunhæf verkefni, Skilningsmiðað námsmat, Hópavinna
 
 ## Vinsamlega vitnið í þetta verk sem
-Ingimundardóttir, H. (2024). Endurskoðun á námskeiði í Viðskiptagreind: Hagnýt hæfni í brennidepli. *Ráðstefna Kennsluakademíu opinberu háskólanna*, Veröld Háskóla Íslands, Reykjavík. <https://tungufoss.github.io/Kennsluakademia-IDN610M/>
+Ingimundardóttir, H. (2024). Endurskoðun á námskeiði í Viðskiptagreind: Hagnýt hæfni í brennidepli. *Ráðstefna Kennsluakademíu opinberu háskólanna*, Veröld Háskóla Íslands, Reykjavík. <https://kennsluakademia.hi.is/wp-content/uploads/2024/11/Conf_Kennsluakademia_2024-1.pdf>
 
 ```bibtex
 @inproceedings{Ingimundardottir2024Kennsluakademia,
@@ -25,7 +27,7 @@ Ingimundardóttir, H. (2024). Endurskoðun á námskeiði í Viðskiptagreind: H
   address   = {Veröld Háskóla Íslands, Reykjavík},
   month     = nov,
   year      = {2024},
-  url       = {https://tungufoss.github.io/Kennsluakademia-IDN610M/}
+  url       = {https://kennsluakademia.hi.is/wp-content/uploads/2024/11/Conf_Kennsluakademia_2024-1.pdf}
 }
 ```
 

@@ -28,7 +28,7 @@ citation:
   container-title: Ráðstefna Kennsluakademíu opinberu háskólanna
   publisher-place: Veröld Háskóla Íslands, Reykjavík
   issued: 2024
-  url: https://tungufoss.github.io/Kennsluakademia-IDN610M/
+  url: https://kennsluakademia.hi.is/wp-content/uploads/2024/11/Conf_Kennsluakademia_2024-1.pdf
 filters:
   - quarto/kennsluakademia.lua
 format:
@@ -53,11 +53,28 @@ format:
     include-in-header:
       - text: |
           <link rel="icon" type="image/png" href="quarto/favicon.png">
+    format-links: false
     other-links:
+      - text: Útgefin grein (PDF)
+        icon: file-pdf
+        href: https://kennsluakademia.hi.is/wp-content/uploads/2024/11/Conf_Kennsluakademia_2024-1.pdf
+      - text: Afrit (PDF)
+        icon: file-earmark-pdf
+        href: article.pdf
+      - text: Ráðstefnan 2024
+        icon: globe
+        href: https://kennsluakademia.hi.is/radstefna-kennsluakademiunnar/radstefna-2024/
       - text: Glærur (PDF)
         icon: file-slides
         href: slides.pdf
 ---
+
+::::: {.content-visible when-format="html"}
+::: {.pub-note}
+Erindið var flutt á [Ráðstefnu Kennsluakademíu opinberu háskólanna 2024](https://kennsluakademia.hi.is/radstefna-kennsluakademiunnar/radstefna-2024/) í Veröld Háskóla Íslands, 22. nóvember 2024: Málstofa 4, kl. 14:45–16:05, stofa VHV-023.
+[Útgefin grein (PDF)](https://kennsluakademia.hi.is/wp-content/uploads/2024/11/Conf_Kennsluakademia_2024-1.pdf) · [Glærur (PDF)](slides.pdf)
+:::
+:::::
 
 # Inngangur
 
